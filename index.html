@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Waktu solat Malaysia — kesan lokasi automatik atau pilih zon. Data dari e-solat.gov.my." />
+  <title>Waktu Solat Malaysia</title>
+
+  <!-- Favicon (emoji) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕌</text></svg>" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app-wrapper">
+
+    <!-- Header -->
+    <header class="app-header">
+      <span class="mosque-icon" aria-hidden="true">🕌</span>
+      <h1>Waktu Solat Malaysia</h1>
+      <p class="tagline">Data masa nyata dari e-solat.gov.my</p>
+    </header>
+
+    <!-- Live Clock -->
+    <div class="clock-card" role="timer" aria-label="Jam semasa">
+      <div id="clock" aria-live="polite">--:--:--</div>
+      <div id="todayDate">--</div>
+    </div>
+
+    <!-- Zone Controls -->
+    <div class="control-card">
+      <label for="zoneSelect">Pilih Zon / Kawasan</label>
+      <div class="control-row">
+        <select id="zoneSelect" aria-label="Pilih zon solat">
+          <option value="">— Pilih zon —</option>
+        </select>
+        <button id="detectBtn" type="button">📍 Kesan Lokasi</button>
+      </div>
+    </div>
+
+    <!-- Error Message -->
+    <div id="errorMsg" role="alert" aria-live="assertive"></div>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" aria-label="Memuatkan waktu solat…" aria-live="polite">
+      <div class="spinner" aria-hidden="true"></div>
+      <span>Memuatkan waktu solat…</span>
+    </div>
+
+    <!-- Countdown to Next Prayer -->
+    <div id="countdownSection" aria-live="polite">
+      <div class="countdown-label">Waktu solat seterusnya</div>
+      <div class="countdown-prayer" id="nextPrayerName">—</div>
+      <div id="countdown" aria-label="Masa berbaki">--:--</div>
+    </div>
+
+    <!-- Prayer Times -->
+    <section id="resultsSection" aria-label="Waktu solat hari ini">
+      <div class="results-header">
+        <div id="zoneName"></div>
+        <div id="prayerDate"></div>
+      </div>
+      <div id="prayerCards" role="list" aria-label="Senarai waktu solat"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p>Data daripada <a href="https://www.e-solat.gov.my/" target="_blank" rel="noopener">e-solat.gov.my</a></p>
+      <p>Lokasi dikesan menggunakan <a href="https://nominatim.openstreetmap.org/" target="_blank" rel="noopener">OpenStreetMap Nominatim</a></p>
+      <p style="margin-top:8px; color: #4a6070;">Untuk rujukan sahaja. Sila semak dengan pihak berkuasa tempatan.</p>
+    </footer>
+
+  </div>
+
+  <script src="js/zones.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
