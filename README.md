@@ -3,7 +3,7 @@
 A responsive web app that displays daily Islamic prayer times for all zones in Malaysia.
 Hosted on GitHub Pages — no server required.
 
-🔗 **Live Demo:** [https://izzatur.github.io/waktu-solat-AI/](https://izzatur.github.io/waktu-solat-AI/)
+🔗 **Live Demo:** [https://izzatur.github.io/waktu-solat](https://izzatur.github.io/waktu-solat)
 
 ## Features
 
@@ -25,7 +25,7 @@ Prayer times are fetched from the official Malaysian government API:
 ### Option 1 – Live site (no installation needed)
 
 Open the app directly in your browser:
-👉 [https://izzatur.github.io/waktu-solat-AI/](https://izzatur.github.io/waktu-solat-AI/)
+👉 [https://izzatur.github.io/waktu-solat](https://izzatur.github.io/waktu-solat)
 
 ### Option 2 – Run locally
 
