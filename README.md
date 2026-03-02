@@ -3,6 +3,8 @@
 A responsive web app that displays daily Islamic prayer times for all zones in Malaysia.
 Hosted on GitHub Pages — no server required.
 
+🔗 **Live Demo:** [https://izzatur.github.io/waktu-solat-AI/](https://izzatur.github.io/waktu-solat-AI/)
+
 ## Features
 
 - 🕐 **Live clock** – real-time display of current time and date
@@ -20,10 +22,18 @@ Prayer times are fetched from the official Malaysian government API:
 
 ## Usage
 
-Visit the GitHub Pages deployment:
-Or open the live site at [https://izzatur.github.io/waktu-solat-AI/](https://izzatur.github.io/waktu-solat-AI/)
+### Option 1 – Live site (no installation needed)
 
-Or clone and open `index.html` in any modern browser.
+Open the app directly in your browser:
+👉 [https://izzatur.github.io/waktu-solat-AI/](https://izzatur.github.io/waktu-solat-AI/)
+
+### Option 2 – Run locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Izzatur/waktu-solat-AI.git
+   ```
+2. Open `index.html` in any modern browser — no build step or server required.
 
 ## Zones Covered
 
